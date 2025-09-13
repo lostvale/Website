@@ -20,7 +20,20 @@
 </head>
 <body>
   <img src="LOSTVALE.png">
+  <audio autoplay loop>
+  <source src="sleep.mp3" type="audio/mp3">
+</audio>
+  <script>
+  document.addEventListener("click", () => {
+    const audio = document.getElementById("bg-audio");
+    if (audio.paused) {
+      audio.play();
+    }
+  });
+</script>
+
 </body>
 
 </html>
+
 
